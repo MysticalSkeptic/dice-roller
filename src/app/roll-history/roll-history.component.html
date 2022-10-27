@@ -1,1 +1,5 @@
-<p>roll-history works!</p>
+<div
+    *ngFor="let r of diceRollingSvc.rollHistory"
+>
+    d{{ r.sides }} - {{ r.result }}
+</div>
